@@ -52,7 +52,7 @@ class CompareTest extends \PHPUnit_Framework_TestCase
     public function testNullIsValid()
     {
         $this->context->expects($this->never())
-            ->method('addViolation');
+            ->method('addViolationAtSubPath');
 
         $this->validator->validate(null, new Compare(array(
             'field'        => 'foo',
@@ -68,7 +68,7 @@ class CompareTest extends \PHPUnit_Framework_TestCase
     public function testOperatorsValid(array $options)
     {
         $this->context->expects($this->never())
-            ->method('addViolation');
+            ->method('addViolationAtSubPath');
 
         $this->validator->validate(new CompareValidatorTest_Class(), new Compare($options));
     }
@@ -92,7 +92,7 @@ class CompareTest extends \PHPUnit_Framework_TestCase
     public function testValuesNullValid(array $options)
     {
         $this->context->expects($this->never())
-            ->method('addViolation');
+            ->method('addViolationAtSubPath');
 
         $this->validator->validate(new CompareValidatorTest_Class(), new Compare($options));
     }
@@ -100,8 +100,8 @@ class CompareTest extends \PHPUnit_Framework_TestCase
     public function testMessageIsSet()
     {
         $this->context->expects($this->once())
-            ->method('addViolation')
-            ->with('Foo')
+            ->method('addViolationAtSubPath')
+            ->with('one', 'Foo')
            ;
 
         $this->validator->validate(new CompareValidatorTest_Class(), new Compare(array(
@@ -118,7 +118,7 @@ class CompareTest extends \PHPUnit_Framework_TestCase
     public function testOperatorsInvalid(array $options)
     {
         $this->context->expects($this->once())
-            ->method('addViolation');
+            ->method('addViolationAtSubPath');
 
         $this->validator->validate(new CompareValidatorTest_Class(), new Compare($options));
     }

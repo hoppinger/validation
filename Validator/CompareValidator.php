@@ -58,7 +58,7 @@ class CompareValidator extends ConstraintValidator
         }
 
         if (false === $b) {
-            $this->context->addViolation($constraint->message);
+            $this->context->addViolationAtSubPath($constraint->field, $constraint->message);
         }
     }
 
