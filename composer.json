@@ -1,0 +1,25 @@
+{
+    "name": "hoppinger/compare-constraint-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony FOSJsRoutingBundle",
+    "keywords": ["symfony2", "bundle", "validator", "constraint"],
+    "homepage": "http://github.com/hoppinger/HopCompareConstraintBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hoppinger BV",
+            "email": "info@hoppinger.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/validator": ">=2.1,<2.3-dev",
+        "symfony/form": ">=2.1,<2.3-dev",
+        "symfony/framework-bundle": ">=2.1,<2.3-dev"
+    },
+    "autoload": {
+        "psr-0": { "Hop\\CompareConstraintBundle": "" }
+    },
+    "target-dir": "Hop/CompareConstraintBundle"
+}
