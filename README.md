@@ -4,6 +4,8 @@ Bundle which adds several validator constraints to your Symfony project.
 
 For now only a constraint `Compare` is available which allows you to compare two properties.
 
+[![Build Status](https://secure.travis-ci.org/hoppinger/HopValidationBundle.png?branch=master)](https://travis-ci.org/hoppinger/HopValidationBundle)
+
 ## Requirements
 
 For now only compatible with Symfony 2.1+
