@@ -17,7 +17,10 @@ use Symfony\Component\Form\Util\PropertyPath;
 
 class CompareValidator extends ConstraintValidator
 {
-    public function isValid($object, Constraint $constraint)
+    /**
+     * {@inheritDoc}
+     */
+    public function validate($object, Constraint $constraint)
     {
         if (null === $object) {
             return;
