@@ -38,6 +38,7 @@ class Compare extends Constraint
         if (!in_array($this->operator, $this->getValidOperators())) {
             throw new ConstraintDefinitionException(sprintf('The option "operator" must be one of %s', json_encode($this->getValidOperators())));
         }
+
         foreach (array('field', 'compare_with') as $property) {
 
             if (empty($this->{$property})) {
