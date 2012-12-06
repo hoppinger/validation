@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of HopCompareConstraintBundle
+ * This file is part of HopValidationBundle
  *
  * (c) Hoppinger BV <info@hoppinger.com>
  *

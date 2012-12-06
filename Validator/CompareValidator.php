@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of HopCompareConstraintBundle
+ * This file is part of HopValidationBundle
  *
  * (c) Hoppinger BV <info@hoppinger.com>
  *
@@ -8,7 +8,7 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Hop\CompareConstraintBundle\Validator;
+namespace Hop\ValidationBundle\Validator;
 
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Constraint;

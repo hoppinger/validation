@@ -1,9 +1,9 @@
 {
-    "name": "hoppinger/compare-constraint-bundle",
+    "name": "hoppinger/validation-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony2 bundle which adds a validator constraint to compare two properties",
+    "description": " Bundle which adds several validator constraints to your Symfony project",
     "keywords": ["symfony2", "bundle", "validator", "constraint"],
-    "homepage": "http://github.com/hoppinger/HopCompareConstraintBundle",
+    "homepage": "http://github.com/hoppinger/HopValidationBundle",
     "license": "MIT",
     "authors": [
         {
@@ -19,7 +19,7 @@
         "symfony/framework-bundle": ">=2.1,<2.3-dev"
     },
     "autoload": {
-        "psr-0": { "Hop\\CompareConstraintBundle": "" }
+        "psr-0": { "Hop\\ValidationBundle": "" }
     },
-    "target-dir": "Hop/CompareConstraintBundle"
+    "target-dir": "Hop/ValidationBundle"
 }
