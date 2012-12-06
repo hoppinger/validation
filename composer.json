@@ -1,7 +1,7 @@
 {
     "name": "hoppinger/compare-constraint-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony FOSJsRoutingBundle",
+    "description": "Symfony2 bundle which adds a validator constraint to compare two properties",
     "keywords": ["symfony2", "bundle", "validator", "constraint"],
     "homepage": "http://github.com/hoppinger/HopCompareConstraintBundle",
     "license": "MIT",
