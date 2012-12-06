@@ -59,11 +59,6 @@ class CompareValidator extends ConstraintValidator
         }
     }
 
-    protected function isEmpty($value)
-    {
-        return null === $value || '' === $value;
-    }
-
     protected function getValue($object, $field)
     {
         $path = new PropertyPath($field);
