@@ -10,6 +10,8 @@
 
 namespace Hop\Validation\Tests;
 
+use Symfony\Component\Validator\Constraint;
+
 use Hop\Validation\Constraint\Compare;
 use Hop\Validation\Constraint\CompareValidator;
 
@@ -60,6 +62,17 @@ class CompareTest extends \PHPUnit_Framework_TestCase
             'operator'     => Compare::OP_EQ,
             'message'      => 'Foo',
         )));
+    }
+
+    public function testGetTargets()
+    {
+        $compare = new Compare(array(
+            'field'        => 'foo',
+            'compare_with' => 'bar',
+            'operator'     => Compare::OP_EQ,
+            'message'      => 'Foo',
+        ));
+        $this->assertEquals(Constraint::CLASS_CONSTRAINT, $compare->getTargets());
     }
 
     /**
