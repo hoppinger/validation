@@ -53,8 +53,6 @@ class CompareValidator extends ConstraintValidator
             case $constraint::OP_NEQ:
                 $b = $value != $compare;
                 break;
-            default:
-                throw new ConstraintDefinitionException(sprintf('Invalid operator %s', $constraint->operator));
         }
 
         if (false === $b) {
