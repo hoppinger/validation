@@ -1,37 +1,22 @@
-# HopValidationBundle
+# hoppinger/validation
 
-Bundle which adds several validator constraints to your Symfony project.
+Several validator constraints for your Symfony2 (Validator) project.
 
 For now only a constraint `Compare` is available which allows you to compare two properties.
 
-[![Build Status](https://secure.travis-ci.org/hoppinger/HopValidationBundle.png?branch=master)](https://travis-ci.org/hoppinger/HopValidationBundle)
+[![Build Status](https://secure.travis-ci.org/hoppinger/hop-validation.png?branch=master)](https://travis-ci.org/hoppinger/hoppinger/validation)
 
 ## Requirements
 
-For now only compatible with Symfony 2.1+
+For now only compatible with the Symfony 2.1+ validator.
 
 ## Installation
 
-The recommended way to install this bundle is with [Composer](http://getcomposer.org/). 
-Just add `hoppinger/validation-bundle` to your composer.json by running:
+The recommended way to install this is with [Composer](http://getcomposer.org/). 
+Just add `hoppinger/validation` to your composer.json by running:
 
 ``` bash
-$ php composer.phar require hoppinger/validation-bundle
-```
-
-Now you only need to enable the bundle in your `AppKernel.php`:
-
-``` php
-// app/AppKernel.php
-
-    public function registerBundles()
-    {
-        $bundles = array(
-        /* ... */
-            new Hop\ValidationBundle\HopValidationBundle(),
-        /* ... */    
-        );
-	}
+$ php composer.phar require hoppinger/validation
 ```
 
 ## Usage
@@ -50,7 +35,7 @@ The `Compare` constraint allows you to compare two properties of your object.
 // src/Acme/DemoBundle/Entity/Foo.php
 
 /**
- * @Hop\ValidationBundle\Validator\Compare(field="bar",compare_with="crux",operator="gt",message="Bar should be greater than crux")
+ * @Hop\Validation\Constraint\Compare(field="bar",compare_with="crux",operator="gt",message="Bar should be greater than crux")
  */
 class Foo
 {
@@ -77,7 +62,7 @@ class Foo
 # src/Acme/DemoBundle/Resources/config/validation.yml
 Acme\DemoBundle\Entity\Foo:
     constraints:
-        - Hop\ValidationBundle\Validator\Compare:
+        - Hop\Validation\Constraint\Compare:
             field: bar
             compare_with: crux
             operator: gt
@@ -135,5 +120,5 @@ Constraint matches if `field` is `not equal to` `compare_with`
 
 ## License
 
-HopValidationBundle is licensed under the MIT license.
+hoppinger/validation is licensed under the MIT license.
  

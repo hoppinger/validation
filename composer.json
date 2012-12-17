@@ -1,9 +1,8 @@
 {
-    "name": "hoppinger/validation-bundle",
-    "type": "symfony-bundle",
-    "description": " Bundle which adds several validator constraints to your Symfony project",
-    "keywords": ["symfony2", "bundle", "validator", "constraint"],
-    "homepage": "http://github.com/hoppinger/HopValidationBundle",
+    "name": "hoppinger/validation",
+    "description": "Bundle which adds several validator constraints to your Symfony project",
+    "keywords": ["symfony2", "validator", "constraint"],
+    "homepage": "http://github.com/hoppinger/validation",
     "license": "MIT",
     "authors": [
         {
@@ -15,11 +14,9 @@
     "require": {
         "php": ">=5.3.3",
         "symfony/validator": ">=2.1,<2.3-dev",
-        "symfony/form": ">=2.1,<2.3-dev",
-        "symfony/framework-bundle": ">=2.1,<2.3-dev"
+        "symfony/form": ">=2.1,<2.3-dev"
     },
     "autoload": {
-        "psr-0": { "Hop\\ValidationBundle": "" }
-    },
-    "target-dir": "Hop/ValidationBundle"
+        "psr-0": { "Hop\\Validation": "src" }
+    }
 }

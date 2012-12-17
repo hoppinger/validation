@@ -1,6 +1,6 @@
 <?php
 /**
- * This file is part of HopValidationBundle
+ * This file is part of hoppinger/validation
  *
  * (c) Hoppinger BV <info@hoppinger.com>
  *
@@ -8,10 +8,10 @@
  * with this source code in the file LICENSE.
  */
 
-namespace Hop\ValidationBundle\Tests;
+namespace Hop\Validation\Tests;
 
-use Hop\ValidationBundle\Validator\Compare;
-use Hop\ValidationBundle\Validator\CompareValidator;
+use Hop\Validation\Constraint\Compare;
+use Hop\Validation\Constraint\CompareValidator;
 
 class CompareValidatorTest_Class
 {
