@@ -12,7 +12,6 @@ namespace Hop\Validation\Constraint;
 
 use Symfony\Component\Validator\ConstraintValidator;
 use Symfony\Component\Validator\Constraint;
-use Symfony\Component\Validator\Exception\ConstraintDefinitionException;
 use Symfony\Component\Form\Util\PropertyPath;
 
 class CompareValidator extends ConstraintValidator
