@@ -4,7 +4,7 @@ Several validator constraints for your Symfony2 (Validator) project.
 
 For now only a constraint `Compare` is available which allows you to compare two properties.
 
-[![Build Status](https://secure.travis-ci.org/hoppinger/hop-validation.png?branch=master)](https://travis-ci.org/hoppinger/hoppinger/validation)
+[![Build Status](https://travis-ci.org/hoppinger/validation.png?branch=master)](https://travis-ci.org/hoppinger/validation)
 
 ## Requirements
 
