@@ -12,7 +12,7 @@
          bootstrap="Tests/bootstrap.php"
 >
     <testsuites>
-        <testsuite name="Korstiaan.com Test Suite">
+        <testsuite name="HopValidationBundle Test Suite">
             <directory>./Tests</directory>
         </testsuite>
     </testsuites>
