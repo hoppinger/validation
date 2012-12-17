@@ -1,6 +1,6 @@
 {
     "name": "hoppinger/validation",
-    "description": "Bundle which adds several validator constraints to your Symfony project",
+    "description": "Several validator constraints for your Symfony2 (Validator) project",
     "keywords": ["symfony2", "validator", "constraint"],
     "homepage": "http://github.com/hoppinger/validation",
     "license": "MIT",
